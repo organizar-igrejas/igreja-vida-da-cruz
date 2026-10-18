@@ -1,0 +1,742 @@
+/* =========================================================
+   COUNTRIES
+   PAÍSES / PROVÍNCIAS / DISTRITOS / ZONAS
+   ========================================================= */
+
+
+/* =========================================================
+   COUNTRY PAGE HERO
+   ========================================================= */
+
+.country-page-hero {
+
+    position: relative;
+
+    min-height: 440px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    overflow: hidden;
+
+    color: var(--color-white);
+
+    background: var(--color-black);
+
+}
+
+
+.country-page-hero-image {
+
+    position: absolute;
+
+    inset: 0;
+
+}
+
+
+.country-page-hero-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 0.55;
+
+}
+
+
+.country-page-hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            0deg,
+            rgba(0,0,0,0.94),
+            rgba(0,0,0,0.20)
+        );
+
+}
+
+
+.country-page-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    padding-block: 55px;
+
+}
+
+
+.country-page-hero-content .flag {
+
+    font-size: 3rem;
+
+    margin-bottom: 12px;
+
+}
+
+
+.country-page-hero-content h1 {
+
+    margin-bottom: 10px;
+
+    font-size:
+        clamp(2.5rem, 6vw, 5rem);
+
+}
+
+
+.country-page-hero-content p {
+
+    max-width: 650px;
+
+    color:
+        rgba(255,255,255,0.65);
+
+}
+
+
+/* =========================================================
+   COUNTRY NAVIGATION
+   ========================================================= */
+
+.country-navigation {
+
+    position: sticky;
+
+    top: var(--header-height);
+
+    z-index: 20;
+
+    background:
+        rgba(255,255,255,0.96);
+
+    border-bottom:
+        1px solid var(--border-light);
+
+    backdrop-filter:
+        blur(15px);
+
+}
+
+
+.country-navigation-inner {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    overflow-x: auto;
+
+}
+
+
+.country-navigation a {
+
+    flex: 0 0 auto;
+
+    padding:
+        14px 15px;
+
+    color:
+        var(--text-secondary);
+
+    font-size:
+        0.78rem;
+
+    font-weight:
+        750;
+
+    white-space:
+        nowrap;
+
+}
+
+
+.country-navigation a:hover,
+.country-navigation a.active {
+
+    color:
+        var(--color-red);
+
+}
+
+
+/* =========================================================
+   BREADCRUMB HIERARCHY
+   ========================================================= */
+
+.country-breadcrumb {
+
+    padding-block:
+        20px;
+
+    background:
+        var(--bg-secondary);
+
+}
+
+
+/* =========================================================
+   PROVINCE / REGION GRID
+   ========================================================= */
+
+.province-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:
+        18px;
+
+}
+
+
+.province-card {
+
+    position: relative;
+
+    min-height:
+        260px;
+
+    overflow:
+        hidden;
+
+    color:
+        var(--color-white);
+
+    background:
+        var(--color-black);
+
+    border-radius:
+        var(--radius-lg);
+
+}
+
+
+.province-card-image {
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+}
+
+
+.province-card-image img {
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    object-fit:
+        cover;
+
+    opacity:
+        0.58;
+
+    transition:
+        transform 0.6s ease;
+
+}
+
+
+.province-card:hover
+.province-card-image img {
+
+    transform:
+        scale(1.08);
+
+}
+
+
+.province-card-overlay {
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    background:
+        linear-gradient(
+            0deg,
+            rgba(0,0,0,0.92),
+            rgba(0,0,0,0.05)
+        );
+
+}
+
+
+.province-card-content {
+
+    position:
+        absolute;
+
+    right:
+        0;
+
+    bottom:
+        0;
+
+    left:
+        0;
+
+    z-index:
+        2;
+
+    padding:
+        22px;
+
+}
+
+
+.province-card-content h3 {
+
+    margin-bottom:
+        6px;
+
+}
+
+
+.province-card-content span {
+
+    color:
+        rgba(255,255,255,0.60);
+
+    font-size:
+        0.76rem;
+
+}
+
+
+/* =========================================================
+   DISTRICTS
+   ========================================================= */
+
+.district-section {
+
+    padding-block:
+        var(--space-10);
+
+}
+
+
+.district-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        14px;
+
+}
+
+
+.district-card {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        12px;
+
+    padding:
+        18px;
+
+    color:
+        var(--text-primary);
+
+    background:
+        var(--color-white);
+
+    border:
+        1px solid var(--border-light);
+
+    border-radius:
+        var(--radius-md);
+
+}
+
+
+.district-card:hover {
+
+    border-color:
+        var(--color-red);
+
+}
+
+
+.district-card-info strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        3px;
+
+}
+
+
+.district-card-info span {
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        0.72rem;
+
+}
+
+
+.district-card-arrow {
+
+    color:
+        var(--color-red);
+
+    font-weight:
+        900;
+
+}
+
+
+/* =========================================================
+   ZONE DIRECTORY
+   ========================================================= */
+
+.zone-directory {
+
+    padding-block:
+        var(--space-10);
+
+    background:
+        var(--bg-secondary);
+
+}
+
+
+.zone-list {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        12px;
+
+}
+
+
+.zone-item {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+    padding:
+        18px;
+
+    background:
+        var(--color-white);
+
+    border:
+        1px solid var(--border-light);
+
+    border-radius:
+        var(--radius-md);
+
+}
+
+
+.zone-number {
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    flex: 0 0 42px;
+
+    width:
+        42px;
+
+    height:
+        42px;
+
+    color:
+        var(--color-white);
+
+    background:
+        var(--color-black);
+
+    border-radius:
+        10px;
+
+    font-size:
+        0.78rem;
+
+    font-weight:
+        850;
+
+}
+
+
+.zone-item:hover .zone-number {
+
+    background:
+        var(--color-red);
+
+}
+
+
+.zone-info {
+
+    flex: 1;
+
+}
+
+
+.zone-info strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        3px;
+
+}
+
+
+.zone-info span {
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        0.74rem;
+
+}
+
+
+/* =========================================================
+   COUNTRY STATISTICS
+   ========================================================= */
+
+.country-statistics {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        15px;
+
+    margin-top:
+        var(--space-7);
+
+}
+
+
+.country-stat {
+
+    padding:
+        22px;
+
+    text-align:
+        center;
+
+    color:
+        var(--color-white);
+
+    background:
+        var(--color-black);
+
+    border-radius:
+        var(--radius-md);
+
+}
+
+
+.country-stat strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        5px;
+
+    color:
+        var(--color-red);
+
+    font-size:
+        2rem;
+
+}
+
+
+.country-stat span {
+
+    color:
+        rgba(255,255,255,0.60);
+
+    font-size:
+        0.72rem;
+
+}
+
+
+/* =========================================================
+   COUNTRY CONTACT
+   ========================================================= */
+
+.country-contact {
+
+    padding:
+        var(--space-8);
+
+    color:
+        var(--color-white);
+
+    background:
+        var(--color-red);
+
+    border-radius:
+        var(--radius-xl);
+
+}
+
+
+.country-contact-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr auto;
+
+    gap:
+        30px;
+
+    align-items:
+        center;
+
+}
+
+
+.country-contact p {
+
+    margin:
+        0;
+
+    color:
+        rgba(255,255,255,0.72);
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .province-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+    .district-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+    .country-statistics {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .province-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .district-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .zone-list {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .country-statistics {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+    .country-contact-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}

@@ -1,0 +1,175 @@
+[
+  {
+    "id": "mw-blantyre",
+    "countryId": "malawi",
+    "provinceId": "mw-southern",
+    "name": "Blantyre",
+    "active": true
+  },
+  {
+    "id": "mw-chikwawa",
+    "countryId": "malawi",
+    "provinceId": "mw-southern",
+    "name": "Chikwawa",
+    "active": true
+  },
+  {
+    "id": "mw-mulanje",
+    "countryId": "malawi",
+    "provinceId": "mw-southern",
+    "name": "Mulanje",
+    "active": true
+  },
+  {
+    "id": "mw-mangochi",
+    "countryId": "malawi",
+    "provinceId": "mw-southern",
+    "name": "Mangochi",
+    "active": true
+  },
+
+  {
+    "id": "mw-lilongwe",
+    "countryId": "malawi",
+    "provinceId": "mw-central",
+    "name": "Lilongwe",
+    "active": true
+  },
+  {
+    "id": "mw-dedza",
+    "countryId": "malawi",
+    "provinceId": "mw-central",
+    "name": "Dedza",
+    "active": true
+  },
+
+  {
+    "id": "mw-mzimba",
+    "countryId": "malawi",
+    "provinceId": "mw-northern",
+    "name": "Mzimba",
+    "active": true
+  },
+  {
+    "id": "mw-karonga",
+    "countryId": "malawi",
+    "provinceId": "mw-northern",
+    "name": "Karonga",
+    "active": true
+  },
+
+  {
+    "id": "mz-tete-city",
+    "countryId": "mozambique",
+    "provinceId": "mz-tete",
+    "name": "Cidade de Tete",
+    "active": true
+  },
+  {
+    "id": "mz-moatize",
+    "countryId": "mozambique",
+    "provinceId": "mz-tete",
+    "name": "Moatize",
+    "active": true
+  },
+  {
+    "id": "mz-angonia",
+    "countryId": "mozambique",
+    "provinceId": "mz-tete",
+    "name": "Angónia",
+    "active": true
+  },
+  {
+    "id": "mz-tsangano",
+    "countryId": "mozambique",
+    "provinceId": "mz-tete",
+    "name": "Tsangano",
+    "active": true
+  },
+  {
+    "id": "mz-zumbu",
+    "countryId": "mozambique",
+    "provinceId": "mz-tete",
+    "name": "Zumbo",
+    "active": true
+  },
+  {
+    "id": "mz-changara",
+    "countryId": "mozambique",
+    "provinceId": "mz-tete",
+    "name": "Changara",
+    "active": true
+  },
+  {
+    "id": "mz-macanga",
+    "countryId": "mozambique",
+    "provinceId": "mz-tete",
+    "name": "Macanga",
+    "active": true
+  },
+  {
+    "id": "mz-marumewa",
+    "countryId": "mozambique",
+    "provinceId": "mz-tete",
+    "name": "Marara",
+    "active": true
+  },
+  {
+    "id": "mz-mutarara",
+    "countryId": "mozambique",
+    "provinceId": "mz-tete",
+    "name": "Mutarara",
+    "active": true
+  },
+  {
+    "id": "mz-doa",
+    "countryId": "mozambique",
+    "provinceId": "mz-tete",
+    "name": "Dôa",
+    "active": true
+  },
+  {
+    "id": "mz-chifunde",
+    "countryId": "mozambique",
+    "provinceId": "mz-tete",
+    "name": "Chifunde",
+    "active": true
+  },
+  {
+    "id": "mz-macanga",
+    "countryId": "mozambique",
+    "provinceId": "mz-tete",
+    "name": "Macanga",
+    "active": true
+  },
+
+  {
+    "id": "mz-chimoio",
+    "countryId": "mozambique",
+    "provinceId": "mz-manica",
+    "name": "Chimoio",
+    "active": true
+  },
+  {
+    "id": "mz-gondola",
+    "countryId": "mozambique",
+    "provinceId": "mz-manica",
+    "name": "Gondola",
+    "active": true
+  },
+
+  {
+    "id": "mz-beira",
+    "countryId": "mozambique",
+    "provinceId": "mz-sofala",
+    "name": "Beira",
+    "active": true
+  },
+  {
+    "id": "mz-dondo",
+    "countryId": "mozambique",
+    "provinceId": "mz-sofala",
+    "name": "Dondo",
+    "active": true
+  }
+]

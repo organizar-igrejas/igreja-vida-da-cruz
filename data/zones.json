@@ -1,0 +1,84 @@
+[
+  {
+    "id": "mw-blantyre-city-zone",
+    "countryId": "malawi",
+    "provinceId": "mw-southern",
+    "districtId": "mw-blantyre",
+    "name": "Blantyre City Zone",
+    "location": "Blantyre City",
+    "active": true
+  },
+  {
+    "id": "mw-bangula-zone",
+    "countryId": "malawi",
+    "provinceId": "mw-southern",
+    "districtId": "mw-chikwawa",
+    "name": "Bangula Zone",
+    "location": "Bangula",
+    "active": true
+  },
+  {
+    "id": "mw-chiromoni-zone",
+    "countryId": "malawi",
+    "provinceId": "mw-southern",
+    "districtId": "mw-blantyre",
+    "name": "Chiromoni Zone",
+    "location": "Chiromoni, Blantyre City",
+    "active": true
+  },
+
+  {
+    "id": "mz-tete-city-zone",
+    "countryId": "mozambique",
+    "provinceId": "mz-tete",
+    "districtId": "mz-tete-city",
+    "name": "Tete City Zone",
+    "location": "Cidade de Tete",
+    "active": true
+  },
+  {
+    "id": "mz-nhamatanda-zone",
+    "countryId": "mozambique",
+    "provinceId": "mz-tete",
+    "districtId": "mz-tete-city",
+    "name": "Nhamatanda-Matundo Zone",
+    "location": "Nhamatanda-Matundo, Cidade de Tete",
+    "active": true
+  },
+  {
+    "id": "mz-zobue-zone",
+    "countryId": "mozambique",
+    "provinceId": "mz-tete",
+    "districtId": "mz-angonia",
+    "name": "Zobué Zone",
+    "location": "Zobué",
+    "active": true
+  },
+  {
+    "id": "mz-moatize-zone",
+    "countryId": "mozambique",
+    "provinceId": "mz-tete",
+    "districtId": "mz-moatize",
+    "name": "Moatize Zone",
+    "location": "Moatize",
+    "active": true
+  },
+  {
+    "id": "mz-chimoio-zone",
+    "countryId": "mozambique",
+    "provinceId": "mz-manica",
+    "districtId": "mz-chimoio",
+    "name": "Chimoio Zone",
+    "location": "Chimoio",
+    "active": true
+  },
+  {
+    "id": "mz-beira-zone",
+    "countryId": "mozambique",
+    "provinceId": "mz-sofala",
+    "districtId": "mz-beira",
+    "name": "Beira Zone",
+    "location": "Beira",
+    "active": true
+  }
+]

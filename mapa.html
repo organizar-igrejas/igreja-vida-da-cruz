@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Mapa e localização das Igrejas Vida da Cruz em Moçambique e Malawi.">
+
+    <title>Mapa das Igrejas | Igreja Vida da Cruz</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+    <div class="container header-container">
+
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-cross">
+                ✝
+            </span>
+
+            <span class="logo-text">
+
+                <strong>
+                    IGREJA VIDA DA CRUZ
+                </strong>
+
+                <small>
+                    THE CROSS LIFE CHURCH
+                </small>
+
+            </span>
+
+        </a>
+
+
+        <nav class="main-nav">
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a href="sobre.html">
+                A Igreja
+            </a>
+
+            <a href="lideranca.html">
+                Liderança
+            </a>
+
+            <a href="eventos.html">
+                Eventos
+            </a>
+
+            <a href="noticias.html">
+                Notícias
+            </a>
+
+            <a href="media.html">
+                Media
+            </a>
+
+            <a href="biblia.html">
+                Bíblia
+            </a>
+
+            <a href="radio.html">
+                Rádio
+            </a>
+
+            <a href="ao-vivo.html">
+                Ao Vivo
+            </a>
+
+            <a href="mapa.html"
+               class="active">
+                Mapa
+            </a>
+
+            <a href="contactos.html">
+                Contactos
+            </a>
+
+        </nav>
+
+
+        <button class="menu-toggle"
+                aria-label="Abrir menu">
+
+            ☰
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="map-hero">
+
+    <div class="container">
+
+        <span class="eyebrow">
+            🌍 REDE INTERNACIONAL
+        </span>
+
+
+        <h1>
+            Encontre uma Igreja
+        </h1>
+
+
+        <p>
+            Explore a presença da Igreja Vida da Cruz
+            em Moçambique e The Cross Life Church
+            no Malawi.
+        </p>
+
+
+        <div class="breadcrumb">
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <span>›</span>
+
+            <strong>
+                Mapa
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MAPA PRINCIPAL
+===================================================== -->
+
+<section class="map-main-section">
+
+    <div class="container">
+
+
+        <div class="map-layout">
+
+
+            <!-- FILTROS -->
+
+            <aside class="map-sidebar">
+
+
+                <div class="map-sidebar-header">
+
+                    <span>
+                        📍 LOCALIZAR
+                    </span>
+
+                    <h2>
+                        Encontre uma igreja
+                    </h2>
+
+                </div>
+
+
+                <label for="country">
+                    País
+                </label>
+
+                <select id="country">
+
+                    <option value="all">
+                        Todos os países
+                    </option>
+
+                    <option value="mozambique">
+                        🇲🇿 Moçambique
+                    </option>
+
+                    <option value="malawi">
+                        🇲🇼 Malawi
+                    </option>
+
+                </select>
+
+
+
+                <label for="province">
+                    Província / Região
+                </label>
+
+                <select id="province">
+
+                    <option value="all">
+                        Todas
+                    </option>
+
+                    <option value="tete">
+                        Tete
+                    </option>
+
+                    <option value="blantyre">
+                        Blantyre
+                    </option>
+
+                    <option value="other">
+                        Outras
+                    </option>
+
+                </select>
+
+
+
+                <label for="district">
+                    Distrito
+                </label>
+
+                <select id="district">
+
+                    <option value="all">
+                        Todos
+                    </option>
+
+                    <option value="moatize">
+                        Moatize
+                    </option>
+
+                    <option value="zobue">
+                        Zobué
+                    </option>
+
+                    <option value="blantyre-city">
+                        Blantyre City
+                    </option>
+
+                    <option value="bangula">
+                        Bangula
+                    </option>
+
+                </select>
+
+
+                <button id="searchChurches"
+                        class="btn btn-primary">
+
+                    🔎 Procurar igrejas
+
+                </button>
+
+
+                <button id="resetMap"
+                        class="btn btn-outline">
+
+                    Limpar filtros
+
+                </button>
+
+
+                <div class="map-results-count">
+
+                    <strong id="churchCount">
+                        4
+                    </strong>
+
+                    igrejas/localizações
+
+                </div>
+
+            </aside>
+
+
+
+            <!-- MAPA -->
+
+            <div class="map-container">
+
+
+                <div class="map-toolbar">
+
+                    <div>
+
+                        <strong>
+                            Mapa das Igrejas
+                        </strong>
+
+                        <span>
+                            Moçambique • Malawi
+                        </span>
+
+                    </div>
+
+
+                    <button id="locateMe"
+                            class="map-location-button">
+
+                        📍 Minha localização
+
+                    </button>
+
+                </div>
+
+
+                <!--
+                ==================================================
+                MAPA REAL
+
+                Aqui podemos integrar Leaflet + OpenStreetMap
+                posteriormente.
+
+                Esta área já está preparada para receber
+                o mapa interactivo.
+                ==================================================
+                -->
+
+
+                <div id="churchMap"
+                     class="interactive-map">
+
+
+                    <div class="map-placeholder">
+
+                        <div class="map-placeholder-icon">
+                            📍
+                        </div>
+
+                        <h2>
+                            Mapa Interactivo
+                        </h2>
+
+                        <p>
+                            O mapa das igrejas será apresentado
+                            nesta área.
+                        </p>
+
+
+                        <button id="loadMap"
+                                class="btn btn-primary">
+
+                            Carregar mapa
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- MARCADORES VISUAIS -->
+
+                    <button class="map-marker marker-1"
+                            data-church="nhamatica">
+
+                        📍
+
+                    </button>
+
+
+                    <button class="map-marker marker-2"
+                            data-church="zobue">
+
+                        📍
+
+                    </button>
+
+
+                    <button class="map-marker marker-3"
+                            data-church="chiromoni">
+
+                        📍
+
+                    </button>
+
+
+                    <button class="map-marker marker-4"
+                            data-church="bangula">
+
+                        📍
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     DIRECTÓRIO
+===================================================== -->
+
+<section class="church-directory-section">
+
+    <div class="container">
+
+
+        <div class="section-heading centered">
+
+            <span>
+                ⛪ DIRECTÓRIO
+            </span>
+
+            <h2>
+                Igrejas por localização
+            </h2>
+
+            <p>
+                Seleccione uma localização para conhecer
+                as igrejas e centros da nossa rede.
+            </p>
+
+        </div>
+
+
+        <div id="churchDirectory"
+             class="church-directory-grid">
+
+
+
+            <!-- NHAMATICA -->
+
+            <article class="church-location-card"
+                     data-country="mozambique"
+                     data-province="tete"
+                     data-district="moatize">
+
+                <div class="church-location-image">
+
+                    <img
+                        src="assets/churches/nhamatica.jpg"
+                        alt="Igreja Vida da Cruz Nhamatica">
+
+                    <span>
+                        🇲🇿
+                    </span>
+
+                </div>
+
+
+                <div class="church-location-content">
+
+                    <small>
+                        MOÇAMBIQUE • TETE
+                    </small>
+
+                    <h3>
+                        Nhamatica-Matundo
+                    </h3>
+
+                    <p>
+                        Cidade de Tete
+                    </p>
+
+
+                    <div class="church-location-actions">
+
+                        <a href="igrejas/mocambique/nhamatica-matundo.html"
+                           class="btn btn-primary">
+
+                            Ver igreja
+
+                        </a>
+
+                        <a href="#"
+                           target="_blank"
+                           class="map-link">
+
+                            📍 Mapa
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ZOBUÉ -->
+
+            <article class="church-location-card"
+                     data-country="mozambique"
+                     data-province="tete"
+                     data-district="zobue">
+
+                <div class="church-location-image">
+
+                    <img
+                        src="assets/churches/zobue.jpg"
+                        alt="Igreja Vida da Cruz Zobué">
+
+                    <span>
+                        🇲🇿
+                    </span>
+
+                </div>
+
+
+                <div class="church-location-content">
+
+                    <small>
+                        MOÇAMBIQUE • TETE
+                    </small>
+
+                    <h3>
+                        Zobué
+                    </h3>
+
+                    <p>
+                        Distrito de Moatize, Tete
+                    </p>
+
+
+                    <div class="church-location-actions">
+
+                        <a href="igrejas/mocambique/zobue.html"
+                           class="btn btn-primary">
+
+                            Ver igreja
+
+                        </a>
+
+                        <a href="#"
+                           target="_blank"
+                           class="map-link">
+
+                            📍 Mapa
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- CHIROMONI -->
+
+            <article class="church-location-card"
+                     data-country="malawi"
+                     data-province="blantyre"
+                     data-district="blantyre-city">
+
+                <div class="church-location-image">
+
+                    <img
+                        src="assets/churches/chiromoni.jpg"
+                        alt="The Cross Life Church Chiromoni">
+
+                    <span>
+                        🇲🇼
+                    </span>
+
+                </div>
+
+
+                <div class="church-location-content">
+
+                    <small>
+                        MALAWI • BLANTYRE
+                    </small>
+
+                    <h3>
+                        Chiromoni
+                    </h3>
+
+                    <p>
+                        Blantyre City
+                    </p>
+
+
+                    <div class="church-location-actions">
+
+                        <a href="igrejas/malawi/chiromoni.html"
+                           class="btn btn-primary">
+
+                            View church
+
+                        </a>
+
+                        <a href="#"
+                           target="_blank"
+                           class="map-link">
+
+                            📍 Map
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- BANGULA -->
+
+            <article class="church-location-card"
+                     data-country="malawi"
+                     data-province="other"
+                     data-district="bangula">
+
+                <div class="church-location-image">
+
+                    <img
+                        src="assets/churches/bangula.jpg"
+                        alt="The Cross Life Church Bangula">
+
+                    <span>
+                        🇲🇼
+                    </span>
+
+                </div>
+
+
+                <div class="church-location-content">
+
+                    <small>
+                        MALAWI
+                    </small>
+
+                    <h3>
+                        Bangula
+                    </h3>
+
+                    <p>
+                        Conference &amp; Gathering Centre
+                    </p>
+
+
+                    <div class="church-location-actions">
+
+                        <a href="igrejas/malawi/bangula.html"
+                           class="btn btn-primary">
+
+                            View church
+
+                        </a>
+
+                        <a href="#"
+                           target="_blank"
+                           class="map-link">
+
+                            📍 Map
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ESTRUTURA GEOGRÁFICA
+===================================================== -->
+
+<section class="geographic-structure">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span>
+                ESTRUTURA
+            </span>
+
+            <h2>
+                Como a Igreja está organizada
+            </h2>
+
+        </div>
+
+
+        <div class="geo-flow">
+
+
+            <div class="geo-step">
+
+                <span>
+                    01
+                </span>
+
+                <strong>
+                    País
+                </strong>
+
+                <p>
+                    Malawi ou Moçambique
+                </p>
+
+            </div>
+
+
+            <div class="geo-arrow">
+                →
+            </div>
+
+
+            <div class="geo-step">
+
+                <span>
+                    02
+                </span>
+
+                <strong>
+                    Província / Região
+                </strong>
+
+                <p>
+                    Divisão territorial
+                </p>
+
+            </div>
+
+
+            <div class="geo-arrow">
+                →
+            </div>
+
+
+            <div class="geo-step">
+
+                <span>
+                    03
+                </span>
+
+                <strong>
+                    Distrito
+                </strong>
+
+                <p>
+                    Área administrativa
+                </p>
+
+            </div>
+
+
+            <div class="geo-arrow">
+                →
+            </div>
+
+
+            <div class="geo-step">
+
+                <span>
+                    04
+                </span>
+
+                <strong>
+                    Zona / Centro
+                </strong>
+
+                <p>
+                    Localização da igreja
+                </p>
+
+            </div>
+
+
+            <div class="geo-arrow">
+                →
+            </div>
+
+
+            <div class="geo-step">
+
+                <span>
+                    05
+                </span>
+
+                <strong>
+                    Igreja
+                </strong>
+
+                <p>
+                    Comunidade local
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="cta-section">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div>
+
+                <span>
+                    NÃO ENCONTROU A SUA IGREJA?
+                </span>
+
+                <h2>
+                    Fale connosco.
+                </h2>
+
+                <p>
+                    Ajude-nos a manter actualizada a rede
+                    de igrejas e centros da Igreja Vida da Cruz.
+                </p>
+
+            </div>
+
+
+            <a href="contactos.html"
+               class="btn btn-primary">
+
+                📞 Contactar
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+
+        <div class="footer-grid">
+
+
+            <div>
+
+                <div class="footer-logo">
+                    ✝
+                </div>
+
+                <h3>
+                    IGREJA VIDA DA CRUZ
+                </h3>
+
+                <p>
+                    THE CROSS LIFE CHURCH
+                </p>
+
+                <p>
+                    Uma igreja. Uma família. Uma missão.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    RECURSOS
+                </h4>
+
+                <a href="media.html">
+                    Media
+                </a>
+
+                <a href="biblia.html">
+                    Bíblia
+                </a>
+
+                <a href="radio.html">
+                    Rádio
+                </a>
+
+                <a href="ao-vivo.html">
+                    Ao Vivo
+                </a>
+
+                <a href="mapa.html">
+                    Mapa
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    IGREJA
+                </h4>
+
+                <a href="sobre.html">
+                    Sobre nós
+                </a>
+
+                <a href="lideranca.html">
+                    Liderança
+                </a>
+
+                <a href="eventos.html">
+                    Eventos
+                </a>
+
+                <a href="noticias.html">
+                    Notícias
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    PAÍSES
+                </h4>
+
+                <a href="paises/mocambique/index.html">
+                    🇲🇿 Moçambique
+                </a>
+
+                <a href="paises/malawi/index.html">
+                    🇲🇼 Malawi
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="currentYear"></span>
+                Igreja Vida da Cruz.
+            </p>
+
+            <p>
+                The Cross Life Church
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+document.getElementById("currentYear").textContent =
+    new Date().getFullYear();
+
+
+const country =
+    document.getElementById("country");
+
+const province =
+    document.getElementById("province");
+
+const district =
+    document.getElementById("district");
+
+const searchButton =
+    document.getElementById("searchChurches");
+
+const resetButton =
+    document.getElementById("resetMap");
+
+const cards =
+    document.querySelectorAll(
+        ".church-location-card"
+    );
+
+const count =
+    document.getElementById("churchCount");
+
+
+
+function filterChurches() {
+
+    let visible = 0;
+
+
+    cards.forEach(card => {
+
+        const countryMatch =
+            country.value === "all" ||
+            card.dataset.country === country.value;
+
+
+        const provinceMatch =
+            province.value === "all" ||
+            card.dataset.province === province.value;
+
+
+        const districtMatch =
+            district.value === "all" ||
+            card.dataset.district === district.value;
+
+
+        if (
+            countryMatch &&
+            provinceMatch &&
+            districtMatch
+        ) {
+
+            card.style.display = "";
+
+            visible++;
+
+        }
+
+        else {
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+
+    count.textContent = visible;
+
+}
+
+
+
+searchButton.addEventListener(
+    "click",
+    filterChurches
+);
+
+
+
+resetButton.addEventListener(
+    "click",
+    function() {
+
+        country.value = "all";
+
+        province.value = "all";
+
+        district.value = "all";
+
+        filterChurches();
+
+    }
+);
+
+
+
+/*
+=========================================================
+MAPA
+=========================================================
+
+Nesta fase o mapa funciona como interface.
+
+Na próxima etapa podemos integrar:
+
+Leaflet
++
+OpenStreetMap
+
+sem necessidade de pagar Google Maps.
+
+=========================================================
+*/
+
+
+const loadMap =
+    document.getElementById("loadMap");
+
+const map =
+    document.getElementById("churchMap");
+
+
+loadMap.addEventListener(
+    "click",
+    function() {
+
+        const placeholder =
+            document.querySelector(
+                ".map-placeholder"
+            );
+
+        placeholder.innerHTML = `
+
+            <div class="map-placeholder-icon">
+                🗺️
+            </div>
+
+            <h2>
+                Mapa preparado
+            </h2>
+
+            <p>
+                A integração do mapa interactivo
+                será activada nesta área.
+            </p>
+
+            <small>
+                Leaflet + OpenStreetMap
+            </small>
+
+        `;
+
+    }
+);
+
+
+
+document
+.querySelectorAll(".map-marker")
+.forEach(marker => {
+
+    marker.addEventListener(
+        "click",
+        function() {
+
+            const church =
+                this.dataset.church;
+
+            alert(
+                "Igreja seleccionada: " +
+                church
+            );
+
+        }
+    );
+
+});
+
+
+
+document
+.getElementById("locateMe")
+.addEventListener(
+    "click",
+    function() {
+
+        if (!navigator.geolocation) {
+
+            alert(
+                "O seu navegador não suporta localização."
+            );
+
+            return;
+
+        }
+
+
+        navigator.geolocation.getCurrentPosition(
+
+            function(position) {
+
+                alert(
+                    "Localização encontrada.\n\n" +
+                    "Latitude: " +
+                    position.coords.latitude +
+                    "\nLongitude: " +
+                    position.coords.longitude
+                );
+
+            },
+
+            function() {
+
+                alert(
+                    "Não foi possível obter a sua localização."
+                );
+
+            }
+
+        );
+
+    }
+);
+
+
+</script>
+
+
+</body>
+
+</html>

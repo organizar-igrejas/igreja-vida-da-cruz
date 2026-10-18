@@ -1,0 +1,239 @@
+/* =========================================================
+   RESPONSIVE SYSTEM
+   IGREJA VIDA DA CRUZ
+   ========================================================= */
+
+
+/* =========================================================
+   LARGE DESKTOP
+   ========================================================= */
+
+@media (max-width: 1400px) {
+
+    :root {
+        --container-width: 1180px;
+    }
+
+}
+
+
+@media (max-width: 1200px) {
+
+    :root {
+        --container-width: 1080px;
+    }
+
+    .home-hero h1 {
+        font-size: clamp(3rem, 7vw, 6rem);
+    }
+
+    .quick-access-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .home-social-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET LANDSCAPE
+   ========================================================= */
+
+@media (max-width: 992px) {
+
+    :root {
+        --header-height: 68px;
+    }
+
+    .home-intro-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-country-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-live-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-social-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .home-radio-inner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .home-hero {
+        min-height: 720px;
+    }
+
+    .home-hero-content {
+        padding-block: 80px;
+    }
+
+    .home-hero h1 {
+        font-size: clamp(2.8rem, 11vw, 5rem);
+    }
+
+    .home-hero-scroll {
+        display: none;
+    }
+
+    .home-country-selector {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin-top: 40px;
+    }
+
+    .home-country-card {
+        min-height: 400px;
+    }
+
+    .network-map-preview {
+        min-height: 360px;
+    }
+
+    .network-map-preview img {
+        min-height: 360px;
+    }
+
+    .quick-access-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .home-social-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 576px) {
+
+    .home-hero {
+        min-height: 680px;
+    }
+
+    .home-hero-content {
+        padding-block: 65px;
+    }
+
+    .home-hero h1 {
+        font-size: clamp(2.6rem, 14vw, 4rem);
+        letter-spacing: -0.045em;
+    }
+
+    .home-hero-subtitle {
+        font-size: 0.94rem;
+        line-height: 1.65;
+    }
+
+    .home-hero-actions {
+        flex-direction: column;
+    }
+
+    .home-hero-actions .btn {
+        width: 100%;
+    }
+
+    .home-country-selector {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .home-country-selector a {
+        justify-content: center;
+    }
+
+    .home-country-card {
+        min-height: 370px;
+    }
+
+    .home-country-card-content {
+        padding: 25px;
+    }
+
+    .home-country-flag {
+        font-size: 2rem;
+    }
+
+    .home-country-card-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .quick-access-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quick-access-item {
+        min-height: 110px;
+    }
+
+    .home-events-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .home-social-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-social-card {
+        padding: 20px 10px;
+    }
+
+    .home-bible-box {
+        padding: 30px 22px;
+    }
+
+    .home-radio-inner {
+        gap: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .quick-access-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 7px;
+    }
+
+    .quick-access-item {
+        min-height: 100px;
+    }
+
+    .home-social-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-country-card {
+        min-height: 340px;
+    }
+
+}

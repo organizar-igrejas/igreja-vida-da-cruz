@@ -1,0 +1,47 @@
+[
+  {
+    "id": "event-bangula-001",
+    "countryId": "malawi",
+    "provinceId": "mw-southern",
+    "districtId": "mw-chikwawa",
+    "zoneId": "mw-bangula-zone",
+    "churchId": "mw-bangula-conference",
+    "title": "National Church Conference",
+    "type": "Conference",
+    "level": "National",
+    "description": "A major gathering of The Cross Life Church in Malawi.",
+    "startDate": "",
+    "endDate": "",
+    "startTime": "",
+    "location": "Bangula, Malawi",
+    "image": "assets/events/malawi-bangula-conference.jpg",
+    "speaker": "",
+    "registration": "",
+    "livestream": "",
+    "language": "English",
+    "status": "Scheduled"
+  },
+
+  {
+    "id": "event-zobue-001",
+    "countryId": "mozambique",
+    "provinceId": "mz-tete",
+    "districtId": "mz-angonia",
+    "zoneId": "mz-zobue-zone",
+    "churchId": "mz-zobue-conference",
+    "title": "Grande Conferência da Igreja Vida da Cruz",
+    "type": "Conferência",
+    "level": "Nacional",
+    "description": "Grande encontro nacional da Igreja Vida da Cruz em Moçambique.",
+    "startDate": "",
+    "endDate": "",
+    "startTime": "",
+    "location": "Zobué, Tete",
+    "image": "assets/events/mozambique-zobue-conference.jpg",
+    "speaker": "",
+    "registration": "",
+    "livestream": "",
+    "language": "Português",
+    "status": "Agendado"
+  }
+]

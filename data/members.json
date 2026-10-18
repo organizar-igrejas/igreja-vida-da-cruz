@@ -1,0 +1,25 @@
+[
+  {
+    "id": "member-demo-001",
+    "membershipNumber": "IVC-DEMO-001",
+    "firstName": "Member",
+    "lastName": "Demo",
+    "countryId": "mozambique",
+    "provinceId": "mz-tete",
+    "districtId": "mz-tete-city",
+    "zoneId": "mz-nhamatanda-zone",
+    "churchId": "mz-nhamatanda-matundo-hq",
+    "ministryId": "ministry-general",
+    "position": "Member",
+    "phone": "",
+    "whatsapp": "",
+    "email": "",
+    "birthDate": "",
+    "gender": "",
+    "photo": "",
+    "membershipDate": "",
+    "baptized": false,
+    "active": true,
+    "privacyConsent": false
+  }
+]

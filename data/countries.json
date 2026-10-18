@@ -1,0 +1,22 @@
+[
+  {
+    "id": "malawi",
+    "name": "Malawi",
+    "nativeName": "Malawi",
+    "code": "MW",
+    "language": "English",
+    "flag": "🇲🇼",
+    "capital": "Lilongwe",
+    "active": true
+  },
+  {
+    "id": "mozambique",
+    "name": "Mozambique",
+    "nativeName": "Moçambique",
+    "code": "MZ",
+    "language": "Português",
+    "flag": "🇲🇿",
+    "capital": "Maputo",
+    "active": true
+  }
+]

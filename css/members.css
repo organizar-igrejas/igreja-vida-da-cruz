@@ -1,0 +1,735 @@
+/* =========================================================
+   MEMBERS MANAGEMENT
+   SISTEMA DE MEMBROS
+   ========================================================= */
+
+
+/* =========================================================
+   MEMBER PAGE
+   ========================================================= */
+
+.members-page {
+
+    min-height:
+        100vh;
+
+    background:
+        var(--bg-secondary);
+
+}
+
+
+.members-header {
+
+    padding:
+        30px 0;
+
+    background:
+        var(--color-white);
+
+    border-bottom:
+        1px solid var(--border-light);
+
+}
+
+
+.members-header-inner {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+}
+
+
+.members-header h1 {
+
+    margin-bottom:
+        5px;
+
+}
+
+
+.members-header p {
+
+    margin:
+        0;
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        0.82rem;
+
+}
+
+
+/* =========================================================
+   MEMBER STATISTICS
+   ========================================================= */
+
+.member-stats {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(5,1fr);
+
+    gap:
+        12px;
+
+    margin-block:
+        25px;
+
+}
+
+
+.member-stat-card {
+
+    padding:
+        20px;
+
+    background:
+        var(--color-white);
+
+    border:
+        1px solid var(--border-light);
+
+    border-radius:
+        var(--radius-lg);
+
+}
+
+
+.member-stat-icon {
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    width:
+        40px;
+
+    height:
+        40px;
+
+    margin-bottom:
+        13px;
+
+    color:
+        white;
+
+    background:
+        var(--color-black);
+
+    border-radius:
+        10px;
+
+}
+
+
+.member-stat-card strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        4px;
+
+    font-size:
+        1.65rem;
+
+}
+
+
+.member-stat-card span {
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        0.7rem;
+
+}
+
+
+/* =========================================================
+   MEMBER TOOLBAR
+   ========================================================= */
+
+.member-toolbar {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        15px;
+
+    margin-bottom:
+        15px;
+
+    padding:
+        15px;
+
+    background:
+        var(--color-white);
+
+    border:
+        1px solid var(--border-light);
+
+    border-radius:
+        var(--radius-lg);
+
+}
+
+
+.member-search {
+
+    position:
+        relative;
+
+    flex:
+        1;
+
+    max-width:
+        450px;
+
+}
+
+
+.member-search input {
+
+    width:
+        100%;
+
+    min-height:
+        42px;
+
+    padding:
+        9px 14px 9px 40px;
+
+    border:
+        1px solid var(--border-light);
+
+    border-radius:
+        var(--radius-md);
+
+    outline:
+        none;
+
+}
+
+
+.member-search input:focus {
+
+    border-color:
+        var(--color-red);
+
+}
+
+
+.member-search-icon {
+
+    position:
+        absolute;
+
+    top:
+        50%;
+
+    left:
+        14px;
+
+    transform:
+        translateY(-50%);
+
+    color:
+        var(--text-muted);
+
+}
+
+
+/* =========================================================
+   MEMBER TABLE
+   ========================================================= */
+
+.member-table-card {
+
+    overflow:
+        hidden;
+
+    background:
+        var(--color-white);
+
+    border:
+        1px solid var(--border-light);
+
+    border-radius:
+        var(--radius-lg);
+
+}
+
+
+.member-user {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+
+}
+
+
+.member-user-info strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        2px;
+
+    font-size:
+        0.78rem;
+
+}
+
+
+.member-user-info span {
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        0.66rem;
+
+}
+
+
+/* =========================================================
+   MEMBER PROFILE
+   ========================================================= */
+
+.member-profile {
+
+    overflow:
+        hidden;
+
+    background:
+        var(--color-white);
+
+    border:
+        1px solid var(--border-light);
+
+    border-radius:
+        var(--radius-xl);
+
+}
+
+
+.member-profile-cover {
+
+    height:
+        180px;
+
+    background:
+        linear-gradient(
+            120deg,
+            var(--color-black),
+            #222
+        );
+
+}
+
+
+.member-profile-body {
+
+    position:
+        relative;
+
+    padding:
+        0 30px 30px;
+
+}
+
+
+.member-profile-avatar {
+
+    width:
+        110px;
+
+    height:
+        110px;
+
+    margin-top:
+        -55px;
+
+    margin-bottom:
+        15px;
+
+    overflow:
+        hidden;
+
+    border:
+        5px solid var(--color-white);
+
+    border-radius:
+        50%;
+
+    background:
+        var(--color-black);
+
+}
+
+
+.member-profile-avatar img {
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    object-fit:
+        cover;
+
+}
+
+
+.member-profile-name {
+
+    margin-bottom:
+        4px;
+
+    font-size:
+        1.6rem;
+
+}
+
+
+.member-profile-role {
+
+    color:
+        var(--color-red);
+
+    font-size:
+        0.72rem;
+
+    font-weight:
+        850;
+
+}
+
+
+.member-profile-meta {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        8px;
+
+    margin-top:
+        18px;
+
+}
+
+
+.member-profile-meta span {
+
+    padding:
+        7px 10px;
+
+    color:
+        var(--text-secondary);
+
+    background:
+        var(--bg-secondary);
+
+    border-radius:
+        var(--radius-pill);
+
+    font-size:
+        0.68rem;
+
+}
+
+
+/* =========================================================
+   MEMBER FORM
+   ========================================================= */
+
+.member-form {
+
+    padding:
+        30px;
+
+    background:
+        var(--color-white);
+
+    border:
+        1px solid var(--border-light);
+
+    border-radius:
+        var(--radius-xl);
+
+}
+
+
+.member-form-title {
+
+    margin-bottom:
+        25px;
+
+}
+
+
+.member-form-title h2 {
+
+    margin-bottom:
+        4px;
+
+}
+
+
+.member-form-title p {
+
+    margin:
+        0;
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        0.75rem;
+
+}
+
+
+.member-form-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        16px;
+
+}
+
+
+.member-form-group.full {
+
+    grid-column:
+        1 / -1;
+
+}
+
+
+/* =========================================================
+   MEMBER REGISTRATION STEPS
+   ========================================================= */
+
+.registration-steps {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    margin-bottom:
+        30px;
+
+}
+
+
+.registration-step {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        8px;
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        0.68rem;
+
+    font-weight:
+        800;
+
+}
+
+
+.registration-step-number {
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    width:
+        30px;
+
+    height:
+        30px;
+
+    border:
+        1px solid var(--border-light);
+
+    border-radius:
+        50%;
+
+}
+
+
+.registration-step.active {
+
+    color:
+        var(--color-red);
+
+}
+
+
+.registration-step.active
+.registration-step-number {
+
+    color:
+        white;
+
+    background:
+        var(--color-red);
+
+    border-color:
+        var(--color-red);
+
+}
+
+
+.registration-line {
+
+    flex:
+        1;
+
+    height:
+        1px;
+
+    margin:
+        0 12px;
+
+    background:
+        var(--border-light);
+
+}
+
+
+/* =========================================================
+   MEMBER RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .member-stats {
+
+        grid-template-columns:
+            repeat(3,1fr);
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .members-header-inner {
+
+        align-items:
+            flex-start;
+
+        flex-direction:
+            column;
+
+    }
+
+    .member-stats {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+    .member-toolbar {
+
+        align-items:
+            stretch;
+
+        flex-direction:
+            column;
+
+    }
+
+    .member-search {
+
+        max-width:
+            none;
+
+    }
+
+    .member-form-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .member-form-group.full {
+
+        grid-column:
+            auto;
+
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .member-stats {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}

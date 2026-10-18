@@ -1,0 +1,987 @@
+/* =========================================================
+   CHURCH MANAGEMENT DASHBOARD
+   PAINEL GERAL
+   ========================================================= */
+
+
+/* =========================================================
+   DASHBOARD
+   ========================================================= */
+
+.dashboard {
+
+    min-height:
+        100vh;
+
+    background:
+        var(--bg-secondary);
+
+}
+
+
+/* =========================================================
+   DASHBOARD HEADER
+   ========================================================= */
+
+.dashboard-header {
+
+    padding:
+        35px 0;
+
+    background:
+        var(--color-white);
+
+    border-bottom:
+        1px solid var(--border-light);
+
+}
+
+
+.dashboard-header-inner {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+}
+
+
+.dashboard-greeting h1 {
+
+    margin-bottom:
+        5px;
+
+    font-size:
+        clamp(1.6rem, 3vw, 2.3rem);
+
+}
+
+
+.dashboard-greeting p {
+
+    margin:
+        0;
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        0.78rem;
+
+}
+
+
+.dashboard-user {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+
+}
+
+
+/* =========================================================
+   DASHBOARD OVERVIEW
+   ========================================================= */
+
+.dashboard-overview {
+
+    padding-block:
+        25px;
+
+}
+
+
+.dashboard-card-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        15px;
+
+}
+
+
+.dashboard-card {
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    padding:
+        22px;
+
+    background:
+        var(--color-white);
+
+    border:
+        1px solid var(--border-light);
+
+    border-radius:
+        var(--radius-lg);
+
+}
+
+
+.dashboard-card::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    right:
+        -30px;
+
+    bottom:
+        -40px;
+
+    width:
+        110px;
+
+    height:
+        110px;
+
+    background:
+        rgba(215,25,32,0.06);
+
+    border-radius:
+        50%;
+
+}
+
+
+.dashboard-card-icon {
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    width:
+        42px;
+
+    height:
+        42px;
+
+    margin-bottom:
+        15px;
+
+    color:
+        white;
+
+    background:
+        var(--color-black);
+
+    border-radius:
+        11px;
+
+}
+
+
+.dashboard-card strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        3px;
+
+    font-size:
+        1.8rem;
+
+}
+
+
+.dashboard-card span {
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        0.68rem;
+
+}
+
+
+/* =========================================================
+   DASHBOARD MAIN GRID
+   ========================================================= */
+
+.dashboard-main-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1.3fr 0.7fr;
+
+    gap:
+        20px;
+
+    padding-bottom:
+        30px;
+
+}
+
+
+/* =========================================================
+   DASHBOARD PANEL
+   ========================================================= */
+
+.dashboard-panel {
+
+    overflow:
+        hidden;
+
+    background:
+        var(--color-white);
+
+    border:
+        1px solid var(--border-light);
+
+    border-radius:
+        var(--radius-lg);
+
+}
+
+
+.dashboard-panel-header {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    padding:
+        18px 20px;
+
+    border-bottom:
+        1px solid var(--border-light);
+
+}
+
+
+.dashboard-panel-header h2 {
+
+    margin:
+        0;
+
+    font-size:
+        0.95rem;
+
+}
+
+
+.dashboard-panel-header a {
+
+    color:
+        var(--color-red);
+
+    font-size:
+        0.68rem;
+
+    font-weight:
+        800;
+
+}
+
+
+.dashboard-panel-body {
+
+    padding:
+        20px;
+
+}
+
+
+/* =========================================================
+   ORGANISATION TREE
+   ========================================================= */
+
+.org-tree {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        8px;
+
+}
+
+
+.org-level {
+
+    border:
+        1px solid var(--border-light);
+
+    border-radius:
+        9px;
+
+}
+
+
+.org-level-header {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+
+    padding:
+        12px 14px;
+
+}
+
+
+.org-level-icon {
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    width:
+        34px;
+
+    height:
+        34px;
+
+    color:
+        white;
+
+    background:
+        var(--color-black);
+
+    border-radius:
+        8px;
+
+}
+
+
+.org-level-info {
+
+    flex:
+        1;
+
+}
+
+
+.org-level-info strong {
+
+    display:
+        block;
+
+    font-size:
+        0.75rem;
+
+}
+
+
+.org-level-info span {
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        0.63rem;
+
+}
+
+
+.org-level-count {
+
+    color:
+        var(--color-red);
+
+    font-size:
+        0.68rem;
+
+    font-weight:
+        850;
+
+}
+
+
+.org-children {
+
+    padding:
+        0 14px 12px 58px;
+
+}
+
+
+.org-child {
+
+    position:
+        relative;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        8px;
+
+    padding:
+        8px 0;
+
+    color:
+        var(--text-secondary);
+
+    font-size:
+        0.7rem;
+
+}
+
+
+.org-child::before {
+
+    content:
+        "";
+
+    width:
+        5px;
+
+    height:
+        5px;
+
+    background:
+        var(--color-red);
+
+    border-radius:
+        50%;
+
+}
+
+
+/* =========================================================
+   ACTIVITY
+   ========================================================= */
+
+.activity-list {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+}
+
+
+.activity-item {
+
+    display:
+        flex;
+
+    align-items:
+        flex-start;
+
+    gap:
+        12px;
+
+    padding:
+        14px 0;
+
+    border-bottom:
+        1px solid var(--border-light);
+
+}
+
+
+.activity-item:last-child {
+
+    border-bottom:
+        0;
+
+}
+
+
+.activity-icon {
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    flex:
+        0 0 35px;
+
+    width:
+        35px;
+
+    height:
+        35px;
+
+    color:
+        white;
+
+    background:
+        var(--color-red);
+
+    border-radius:
+        9px;
+
+}
+
+
+.activity-content {
+
+    flex:
+        1;
+
+}
+
+
+.activity-content strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        3px;
+
+    font-size:
+        0.72rem;
+
+}
+
+
+.activity-content p {
+
+    margin:
+        0;
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        0.65rem;
+
+}
+
+
+.activity-time {
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        0.6rem;
+
+}
+
+
+/* =========================================================
+   DASHBOARD EVENTS
+   ========================================================= */
+
+.dashboard-event {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        13px;
+
+    padding:
+        13px 0;
+
+    border-bottom:
+        1px solid var(--border-light);
+
+}
+
+
+.dashboard-event:last-child {
+
+    border-bottom:
+        0;
+
+}
+
+
+.dashboard-event-date {
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    width:
+        48px;
+
+    height:
+        48px;
+
+    color:
+        white;
+
+    background:
+        var(--color-red);
+
+    border-radius:
+        9px;
+
+    text-align:
+        center;
+
+}
+
+
+.dashboard-event-date strong {
+
+    font-size:
+        1rem;
+
+}
+
+
+.dashboard-event-date span {
+
+    font-size:
+        0.55rem;
+
+    font-weight:
+        800;
+
+}
+
+
+.dashboard-event-info {
+
+    flex:
+        1;
+
+}
+
+
+.dashboard-event-info strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        3px;
+
+    font-size:
+        0.72rem;
+
+}
+
+
+.dashboard-event-info span {
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        0.62rem;
+
+}
+
+
+/* =========================================================
+   COUNTRY DASHBOARD
+   ========================================================= */
+
+.country-dashboard-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        15px;
+
+}
+
+
+.country-dashboard-card {
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    min-height:
+        190px;
+
+    padding:
+        25px;
+
+    color:
+        white;
+
+    background:
+        var(--color-black);
+
+    border-radius:
+        var(--radius-lg);
+
+}
+
+
+.country-dashboard-card h3 {
+
+    margin-bottom:
+        5px;
+
+    color:
+        white;
+
+}
+
+
+.country-dashboard-card p {
+
+    color:
+        rgba(255,255,255,0.50);
+
+    font-size:
+        0.68rem;
+
+}
+
+
+.country-dashboard-number {
+
+    margin-top:
+        20px;
+
+    color:
+        var(--color-red);
+
+    font-size:
+        2.3rem;
+
+    font-weight:
+        900;
+
+}
+
+
+.country-dashboard-label {
+
+    color:
+        rgba(255,255,255,0.45);
+
+    font-size:
+        0.65rem;
+
+}
+
+
+/* =========================================================
+   QUICK ADMIN ACTIONS
+   ========================================================= */
+
+.dashboard-actions {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        10px;
+
+}
+
+
+.dashboard-action {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+
+    padding:
+        13px;
+
+    color:
+        var(--text-primary);
+
+    background:
+        var(--bg-secondary);
+
+    border:
+        1px solid transparent;
+
+    border-radius:
+        9px;
+
+    font-size:
+        0.68rem;
+
+    font-weight:
+        750;
+
+}
+
+
+.dashboard-action:hover {
+
+    color:
+        var(--color-red);
+
+    background:
+        rgba(215,25,32,0.05);
+
+    border-color:
+        rgba(215,25,32,0.15);
+
+}
+
+
+.dashboard-action-icon {
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    width:
+        32px;
+
+    height:
+        32px;
+
+    color:
+        white;
+
+    background:
+        var(--color-black);
+
+    border-radius:
+        7px;
+
+}
+
+
+/* =========================================================
+   DASHBOARD RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .dashboard-card-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+    .dashboard-main-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .dashboard-header-inner {
+
+        align-items:
+            flex-start;
+
+        flex-direction:
+            column;
+
+    }
+
+    .dashboard-card-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+    .country-dashboard-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .dashboard-actions {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .dashboard-card-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .dashboard-actions {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}

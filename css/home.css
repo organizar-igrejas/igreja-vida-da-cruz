@@ -1,0 +1,1579 @@
+/* =========================================================
+   IGREJA VIDA DA CRUZ / THE CROSS LIFE CHURCH
+   HOME PAGE
+   ========================================================= */
+
+
+/* =========================================================
+   HERO PRINCIPAL
+   ========================================================= */
+
+.home-hero {
+
+    position: relative;
+
+    min-height:
+        calc(100vh - var(--header-height));
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    color:
+        var(--color-white);
+
+    background:
+        #050505;
+
+}
+
+
+.home-hero-background {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 0;
+
+}
+
+
+.home-hero-background img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 0.55;
+
+    animation:
+        heroZoom 18s ease-in-out infinite alternate;
+
+}
+
+
+.home-hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,0.96) 0%,
+            rgba(0,0,0,0.82) 35%,
+            rgba(0,0,0,0.48) 70%,
+            rgba(0,0,0,0.72) 100%
+        );
+
+}
+
+
+.home-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    padding-block:
+        110px;
+
+}
+
+
+.home-hero-label {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom:
+        var(--space-5);
+
+    padding:
+        8px 13px;
+
+    color:
+        var(--color-white);
+
+    background:
+        rgba(255,255,255,0.07);
+
+    border:
+        1px solid rgba(255,255,255,0.12);
+
+    border-radius:
+        var(--radius-pill);
+
+    font-size:
+        0.72rem;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        0.08em;
+
+    text-transform:
+        uppercase;
+
+    backdrop-filter:
+        blur(12px);
+
+}
+
+
+.home-hero-label::before {
+
+    content: "";
+
+    width: 7px;
+
+    height: 7px;
+
+    background:
+        var(--color-red);
+
+    border-radius:
+        50%;
+
+    box-shadow:
+        0 0 15px
+        rgba(215,25,32,0.8);
+
+}
+
+
+.home-hero h1 {
+
+    max-width:
+        900px;
+
+    margin-bottom:
+        var(--space-6);
+
+    font-size:
+        clamp(3rem, 7vw, 7.2rem);
+
+    line-height:
+        0.94;
+
+    letter-spacing:
+        -0.055em;
+
+}
+
+
+.home-hero h1 .red {
+
+    color:
+        var(--color-red);
+
+}
+
+
+.home-hero-subtitle {
+
+    max-width:
+        680px;
+
+    margin-bottom:
+        var(--space-7);
+
+    color:
+        rgba(255,255,255,0.68);
+
+    font-size:
+        clamp(1rem, 2vw, 1.25rem);
+
+    line-height:
+        1.7;
+
+}
+
+
+.home-hero-actions {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap:
+        12px;
+
+}
+
+
+.home-hero-scroll {
+
+    position: absolute;
+
+    right: 30px;
+
+    bottom: 35px;
+
+    z-index: 3;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color:
+        rgba(255,255,255,0.45);
+
+    font-size:
+        0.65rem;
+
+    letter-spacing:
+        0.15em;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+.home-hero-scroll span {
+
+    width: 1px;
+
+    height: 50px;
+
+    background:
+        linear-gradient(
+            var(--color-red),
+            transparent
+        );
+
+}
+
+
+/* =========================================================
+   HERO COUNTRY SELECTOR
+   ========================================================= */
+
+.home-country-selector {
+
+    position: absolute;
+
+    right: 6%;
+
+    bottom: 65px;
+
+    z-index: 3;
+
+    display: flex;
+
+    gap: 8px;
+
+}
+
+
+.home-country-selector a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding:
+        9px 13px;
+
+    color:
+        rgba(255,255,255,0.70);
+
+    background:
+        rgba(0,0,0,0.55);
+
+    border:
+        1px solid rgba(255,255,255,0.12);
+
+    border-radius:
+        var(--radius-pill);
+
+    font-size:
+        0.72rem;
+
+    font-weight:
+        750;
+
+    backdrop-filter:
+        blur(12px);
+
+}
+
+
+.home-country-selector a:hover,
+.home-country-selector a.active {
+
+    color:
+        var(--color-white);
+
+    background:
+        var(--color-red);
+
+    border-color:
+        var(--color-red);
+
+}
+
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.home-intro {
+
+    padding-block:
+        var(--space-12);
+
+    background:
+        var(--color-white);
+
+}
+
+
+.home-intro-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr 0.8fr;
+
+    gap:
+        var(--space-10);
+
+    align-items:
+        center;
+
+}
+
+
+.home-intro-title {
+
+    max-width:
+        760px;
+
+}
+
+
+.home-intro-title .eyebrow {
+
+    margin-bottom:
+        var(--space-4);
+
+}
+
+
+.home-intro-title h2 {
+
+    margin-bottom:
+        var(--space-5);
+
+    font-size:
+        clamp(2rem, 4vw, 4rem);
+
+    line-height:
+        1.05;
+
+}
+
+
+.home-intro-title h2 span {
+
+    color:
+        var(--color-red);
+
+}
+
+
+.home-intro-title p {
+
+    max-width:
+        680px;
+
+    font-size:
+        1rem;
+
+    line-height:
+        1.8;
+
+}
+
+
+.home-intro-mark {
+
+    position: relative;
+
+    min-height:
+        300px;
+
+    display: grid;
+
+    place-items: center;
+
+    overflow: hidden;
+
+    color:
+        var(--color-white);
+
+    background:
+        var(--color-black);
+
+    border-radius:
+        var(--radius-xl);
+
+}
+
+
+.home-intro-mark::before {
+
+    content: "✝";
+
+    position: absolute;
+
+    color:
+        rgba(255,255,255,0.04);
+
+    font-size:
+        300px;
+
+    line-height:
+        1;
+
+}
+
+
+.home-intro-cross {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: grid;
+
+    place-items: center;
+
+    width: 100px;
+
+    height: 100px;
+
+    color:
+        var(--color-white);
+
+    background:
+        var(--color-red);
+
+    border-radius:
+        25px;
+
+    font-size:
+        3rem;
+
+    font-weight:
+        900;
+
+    box-shadow:
+        0 30px 80px
+        rgba(215,25,32,0.35);
+
+}
+
+
+/* =========================================================
+   TWO COUNTRIES SECTION
+   ========================================================= */
+
+.home-countries {
+
+    padding-block:
+        var(--space-12);
+
+    background:
+        var(--bg-secondary);
+
+}
+
+
+.home-section-heading {
+
+    max-width:
+        760px;
+
+    margin-bottom:
+        var(--space-8);
+
+}
+
+
+.home-section-heading.center {
+
+    margin-inline:
+        auto;
+
+    text-align:
+        center;
+
+}
+
+
+.home-section-heading .eyebrow {
+
+    margin-bottom:
+        10px;
+
+}
+
+
+.home-section-heading h2 {
+
+    margin-bottom:
+        var(--space-4);
+
+    font-size:
+        clamp(2rem, 4vw, 4rem);
+
+    line-height:
+        1.05;
+
+}
+
+
+.home-section-heading p {
+
+    color:
+        var(--text-secondary);
+
+}
+
+
+.home-country-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0,1fr));
+
+    gap:
+        var(--space-6);
+
+}
+
+
+.home-country-card {
+
+    position: relative;
+
+    min-height:
+        480px;
+
+    overflow: hidden;
+
+    color:
+        var(--color-white);
+
+    background:
+        var(--color-black);
+
+    border-radius:
+        var(--radius-xl);
+
+    box-shadow:
+        var(--shadow-lg);
+
+}
+
+
+.home-country-card-image {
+
+    position: absolute;
+
+    inset: 0;
+
+}
+
+
+.home-country-card-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 0.58;
+
+    transition:
+        transform 0.8s ease;
+
+}
+
+
+.home-country-card:hover
+.home-country-card-image img {
+
+    transform:
+        scale(1.08);
+
+}
+
+
+.home-country-card-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            0deg,
+            rgba(0,0,0,0.95) 0%,
+            rgba(0,0,0,0.48) 55%,
+            rgba(0,0,0,0.12) 100%
+        );
+
+}
+
+
+.home-country-card-content {
+
+    position: absolute;
+
+    right: 0;
+
+    bottom: 0;
+
+    left: 0;
+
+    z-index: 2;
+
+    padding:
+        35px;
+
+}
+
+
+.home-country-flag {
+
+    font-size:
+        2.6rem;
+
+    margin-bottom:
+        12px;
+
+}
+
+
+.home-country-card-content h3 {
+
+    margin-bottom:
+        10px;
+
+    font-size:
+        clamp(1.8rem, 3vw, 3rem);
+
+}
+
+
+.home-country-card-content p {
+
+    max-width:
+        520px;
+
+    margin-bottom:
+        22px;
+
+    color:
+        rgba(255,255,255,0.64);
+
+}
+
+
+.home-country-link {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    gap:
+        9px;
+
+    color:
+        var(--color-white);
+
+    font-size:
+        0.82rem;
+
+    font-weight:
+        800;
+
+}
+
+
+.home-country-link:hover {
+
+    color:
+        var(--color-red);
+
+}
+
+
+/* =========================================================
+   CHURCH NETWORK
+   ========================================================= */
+
+.home-network {
+
+    padding-block:
+        var(--space-12);
+
+    background:
+        var(--color-white);
+
+}
+
+
+.network-map-preview {
+
+    position: relative;
+
+    min-height:
+        430px;
+
+    overflow: hidden;
+
+    background:
+        #090909;
+
+    border-radius:
+        var(--radius-xl);
+
+}
+
+
+.network-map-preview img {
+
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 430px;
+
+    object-fit: cover;
+
+    opacity: 0.45;
+
+}
+
+
+.network-map-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    padding:
+        35px;
+
+    background:
+        linear-gradient(
+            0deg,
+            rgba(0,0,0,0.92),
+            transparent 70%
+        );
+
+}
+
+
+.network-map-content {
+
+    max-width:
+        650px;
+
+    color:
+        var(--color-white);
+
+}
+
+
+.network-map-content h3 {
+
+    margin-bottom:
+        10px;
+
+}
+
+
+.network-map-content p {
+
+    margin-bottom:
+        18px;
+
+    color:
+        rgba(255,255,255,0.60);
+
+}
+
+
+/* =========================================================
+   QUICK ACCESS
+   ========================================================= */
+
+.home-quick-access {
+
+    padding-block:
+        var(--space-10);
+
+    background:
+        var(--color-black);
+
+}
+
+
+.quick-access-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(6,1fr);
+
+    gap:
+        10px;
+
+}
+
+
+.quick-access-item {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height:
+        125px;
+
+    padding:
+        15px;
+
+    color:
+        rgba(255,255,255,0.70);
+
+    background:
+        rgba(255,255,255,0.045);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    border-radius:
+        14px;
+
+    text-align:
+        center;
+
+    transition:
+        transform var(--transition-fast),
+        background var(--transition-fast),
+        border-color var(--transition-fast);
+
+}
+
+
+.quick-access-item:hover {
+
+    color:
+        var(--color-white);
+
+    background:
+        rgba(215,25,32,0.14);
+
+    border-color:
+        rgba(215,25,32,0.50);
+
+    transform:
+        translateY(-4px);
+
+}
+
+
+.quick-access-icon {
+
+    display: grid;
+
+    place-items: center;
+
+    width:
+        42px;
+
+    height:
+        42px;
+
+    margin-bottom:
+        10px;
+
+    color:
+        var(--color-white);
+
+    background:
+        var(--color-red);
+
+    border-radius:
+        11px;
+
+}
+
+
+.quick-access-item span {
+
+    font-size:
+        0.74rem;
+
+    font-weight:
+        750;
+
+}
+
+
+/* =========================================================
+   LIVE PREVIEW
+   ========================================================= */
+
+.home-live {
+
+    padding-block:
+        var(--space-12);
+
+    color:
+        var(--color-white);
+
+    background:
+        #070707;
+
+}
+
+
+.home-live-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr 0.5fr;
+
+    gap:
+        var(--space-6);
+
+}
+
+
+.home-live-sidebar {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap:
+        10px;
+
+}
+
+
+.home-live-link {
+
+    display: flex;
+
+    align-items: center;
+
+    gap:
+        13px;
+
+    padding:
+        16px;
+
+    color:
+        rgba(255,255,255,0.70);
+
+    background:
+        rgba(255,255,255,0.045);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    border-radius:
+        12px;
+
+}
+
+
+.home-live-link:hover,
+.home-live-link.active {
+
+    color:
+        var(--color-white);
+
+    border-color:
+        var(--color-red);
+
+    background:
+        rgba(215,25,32,0.13);
+
+}
+
+
+.home-live-link-icon {
+
+    display: grid;
+
+    place-items: center;
+
+    width:
+        42px;
+
+    height:
+        42px;
+
+    background:
+        var(--color-red);
+
+    border-radius:
+        10px;
+
+}
+
+
+/* =========================================================
+   FEATURED EVENTS
+   ========================================================= */
+
+.home-events {
+
+    padding-block:
+        var(--space-12);
+
+    background:
+        var(--bg-secondary);
+
+}
+
+
+.home-events-top {
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap:
+        var(--space-5);
+
+    margin-bottom:
+        var(--space-7);
+
+}
+
+
+.home-events-top .home-section-heading {
+
+    margin-bottom:
+        0;
+
+}
+
+
+/* =========================================================
+   NEWS
+   ========================================================= */
+
+.home-news {
+
+    padding-block:
+        var(--space-12);
+
+    background:
+        var(--color-white);
+
+}
+
+
+/* =========================================================
+   BIBLE
+   ========================================================= */
+
+.home-bible {
+
+    padding-block:
+        var(--space-12);
+
+    background:
+        var(--bg-secondary);
+
+}
+
+
+.home-bible-box {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding:
+        clamp(35px, 7vw, 80px);
+
+    color:
+        var(--color-white);
+
+    background:
+        linear-gradient(
+            125deg,
+            #070707,
+            #191919
+        );
+
+    border-radius:
+        var(--radius-xl);
+
+}
+
+
+.home-bible-box::after {
+
+    content:
+        "“";
+
+    position: absolute;
+
+    top:
+        -50px;
+
+    right:
+        30px;
+
+    color:
+        rgba(215,25,32,0.13);
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        300px;
+
+    line-height:
+        1;
+
+}
+
+
+.home-bible-content {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    max-width:
+        900px;
+
+}
+
+
+.home-bible-content h2 {
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.home-bible-content blockquote {
+
+    margin:
+        0 0 25px;
+
+    color:
+        rgba(255,255,255,0.76);
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(1.3rem, 3vw, 2rem);
+
+    line-height:
+        1.55;
+
+}
+
+
+/* =========================================================
+   RADIO
+   ========================================================= */
+
+.home-radio {
+
+    padding-block:
+        var(--space-10);
+
+    color:
+        var(--color-white);
+
+    background:
+        var(--color-red);
+
+}
+
+
+.home-radio-inner {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap:
+        30px;
+
+}
+
+
+.home-radio-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap:
+        15px;
+
+}
+
+
+.home-radio-icon {
+
+    display: grid;
+
+    place-items: center;
+
+    width:
+        60px;
+
+    height:
+        60px;
+
+    color:
+        var(--color-red);
+
+    background:
+        var(--color-white);
+
+    border-radius:
+        15px;
+
+    font-size:
+        1.4rem;
+
+}
+
+
+.home-radio-title h2 {
+
+    margin-bottom:
+        4px;
+
+}
+
+
+.home-radio-title p {
+
+    margin:
+        0;
+
+    color:
+        rgba(255,255,255,0.70);
+
+}
+
+
+/* =========================================================
+   SOCIAL NETWORKS
+   ========================================================= */
+
+.home-social {
+
+    padding-block:
+        var(--space-12);
+
+    background:
+        var(--color-white);
+
+}
+
+
+.home-social-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(5,1fr);
+
+    gap:
+        12px;
+
+}
+
+
+.home-social-card {
+
+    padding:
+        25px 18px;
+
+    text-align:
+        center;
+
+    border:
+        1px solid var(--border-light);
+
+    border-radius:
+        var(--radius-lg);
+
+    transition:
+        transform var(--transition-fast),
+        border-color var(--transition-fast);
+
+}
+
+
+.home-social-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    border-color:
+        var(--color-red);
+
+}
+
+
+.home-social-card .icon {
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    width:
+        50px;
+
+    height:
+        50px;
+
+    margin:
+        0 auto 13px;
+
+    color:
+        var(--color-white);
+
+    background:
+        var(--color-black);
+
+    border-radius:
+        50%;
+
+}
+
+
+.home-social-card h3 {
+
+    margin-bottom:
+        5px;
+
+    font-size:
+        0.92rem;
+
+}
+
+
+.home-social-card span {
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        0.72rem;
+
+}
+
+
+/* =========================================================
+   HOME CTA
+   ========================================================= */
+
+.home-cta {
+
+    padding-block:
+        var(--space-12);
+
+    background:
+        var(--bg-secondary);
+
+}
+
+
+.home-cta-box {
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    padding:
+        clamp(40px, 7vw, 80px);
+
+    text-align:
+        center;
+
+    color:
+        var(--color-white);
+
+    background:
+        var(--color-black);
+
+    border-radius:
+        var(--radius-xl);
+
+}
+
+
+.home-cta-box::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        350px;
+
+    height:
+        350px;
+
+    left:
+        -120px;
+
+    bottom:
+        -180px;
+
+    background:
+        var(--color-red);
+
+    border-radius:
+        50%;
+
+    filter:
+        blur(90px);
+
+    opacity:
+        0.25;
+
+}
+
+
+.home-cta-content {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    max-width:
+        800px;
+
+    margin:
+        auto;
+
+}
+
+
+.home-cta-content h2 {
+
+    margin-bottom:
+        15px;
+
+    font-size:
+        clamp(2rem, 5vw, 4rem);
+
+}
+
+
+.home-cta-content p {
+
+    max-width:
+        650px;
+
+    margin:
+        0 auto 25px;
+
+    color:
+        rgba(255,255,255,0.60);
+
+}
+
+
+@keyframes heroZoom {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.08);
+    }
+
+}
+
+@keyframes livePulse {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.45;
+        transform: scale(0.7);
+    }
+
+}

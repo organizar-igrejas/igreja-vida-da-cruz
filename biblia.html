@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Bíblia Online — Igreja Vida da Cruz. Leia e pesquise a Palavra de Deus.">
+
+    <title>Bíblia Online | Igreja Vida da Cruz</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+    <div class="container header-container">
+
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-cross">
+                ✝
+            </span>
+
+            <span class="logo-text">
+
+                <strong>
+                    IGREJA VIDA DA CRUZ
+                </strong>
+
+                <small>
+                    THE CROSS LIFE CHURCH
+                </small>
+
+            </span>
+
+        </a>
+
+
+        <nav class="main-nav">
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a href="sobre.html">
+                A Igreja
+            </a>
+
+            <a href="eventos.html">
+                Eventos
+            </a>
+
+            <a href="noticias.html">
+                Notícias
+            </a>
+
+            <a href="media.html">
+                Media
+            </a>
+
+            <a href="biblia.html"
+               class="active">
+                Bíblia
+            </a>
+
+            <a href="radio.html">
+                Rádio
+            </a>
+
+            <a href="ao-vivo.html">
+                Ao Vivo
+            </a>
+
+            <a href="contactos.html">
+                Contactos
+            </a>
+
+        </nav>
+
+
+        <button class="menu-toggle">
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <span class="eyebrow">
+            PALAVRA DE DEUS
+        </span>
+
+        <h1>
+            Bíblia Online
+        </h1>
+
+        <p>
+            Leia, pesquise e medite na Palavra de Deus
+            onde quer que esteja.
+        </p>
+
+        <div class="breadcrumb">
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <span>›</span>
+
+            <strong>
+                Bíblia
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     BÍBLIA
+===================================================== -->
+
+<section class="bible-section">
+
+    <div class="container">
+
+
+        <div class="bible-header">
+
+            <span>
+                📖 SAGRADAS ESCRITURAS
+            </span>
+
+            <h2>
+                Encontre uma passagem
+            </h2>
+
+            <p>
+                Seleccione o livro e capítulo que deseja
+                consultar.
+            </p>
+
+        </div>
+
+
+        <div class="bible-search">
+
+
+            <select id="bibleBook">
+
+                <option value="">
+                    Seleccione o livro
+                </option>
+
+                <option>
+                    Génesis
+                </option>
+
+                <option>
+                    Êxodo
+                </option>
+
+                <option>
+                    Salmos
+                </option>
+
+                <option>
+                    Provérbios
+                </option>
+
+                <option>
+                    Isaías
+                </option>
+
+                <option>
+                    Mateus
+                </option>
+
+                <option>
+                    Marcos
+                </option>
+
+                <option>
+                    Lucas
+                </option>
+
+                <option>
+                    João
+                </option>
+
+                <option>
+                    Actos
+                </option>
+
+                <option>
+                    Romanos
+                </option>
+
+                <option>
+                    1 Coríntios
+                </option>
+
+                <option>
+                    2 Coríntios
+                </option>
+
+                <option>
+                    Efésios
+                </option>
+
+                <option>
+                    Filipenses
+                </option>
+
+                <option>
+                    Hebreus
+                </option>
+
+                <option>
+                    Tiago
+                </option>
+
+                <option>
+                    Apocalipse
+                </option>
+
+            </select>
+
+
+            <input
+                type="number"
+                id="bibleChapter"
+                min="1"
+                placeholder="Capítulo">
+
+
+            <input
+                type="number"
+                id="bibleVerse"
+                min="1"
+                placeholder="Versículo">
+
+
+            <button
+                id="bibleSearchButton"
+                class="btn btn-primary">
+
+                🔎 Pesquisar
+
+            </button>
+
+        </div>
+
+
+
+        <!-- RESULTADO -->
+
+        <div class="bible-reading-box"
+             id="bibleResult">
+
+
+            <div class="bible-placeholder">
+
+                <div>
+                    📖
+                </div>
+
+                <h3>
+                    A Palavra de Deus
+                </h3>
+
+                <p>
+                    Seleccione um livro e capítulo para
+                    iniciar a leitura.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     VERSÍCULO DO DIA
+===================================================== -->
+
+<section class="verse-section">
+
+    <div class="container">
+
+        <div class="verse-card">
+
+            <span>
+                ✦ VERSÍCULO DO DIA
+            </span>
+
+            <blockquote>
+
+                “Ensina-me, Senhor, o teu caminho,
+                e andarei na tua verdade.”
+
+            </blockquote>
+
+            <strong>
+                Salmos 86:11
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ESTUDOS
+===================================================== -->
+
+<section class="bible-resources">
+
+    <div class="container">
+
+
+        <div class="section-heading centered">
+
+            <span>
+                RECURSOS
+            </span>
+
+            <h2>
+                Recursos para o estudo bíblico
+            </h2>
+
+        </div>
+
+
+        <div class="bible-resource-grid">
+
+
+            <a href="#"
+               class="bible-resource-card">
+
+                <span>
+                    📚
+                </span>
+
+                <h3>
+                    Estudos Bíblicos
+                </h3>
+
+                <p>
+                    Materiais para aprofundar o conhecimento
+                    das Escrituras.
+                </p>
+
+            </a>
+
+
+            <a href="#"
+               class="bible-resource-card">
+
+                <span>
+                    📝
+                </span>
+
+                <h3>
+                    Devocionais
+                </h3>
+
+                <p>
+                    Reflexões para fortalecer a vida
+                    espiritual diariamente.
+                </p>
+
+            </a>
+
+
+            <a href="#"
+               class="bible-resource-card">
+
+                <span>
+                    🎧
+                </span>
+
+                <h3>
+                    Bíblia em Áudio
+                </h3>
+
+                <p>
+                    Ouça a Palavra de Deus.
+                </p>
+
+            </a>
+
+
+            <a href="media.html"
+               class="bible-resource-card">
+
+                <span>
+                    🎥
+                </span>
+
+                <h3>
+                    Pregações
+                </h3>
+
+                <p>
+                    Mensagens e ensinamentos da igreja.
+                </p>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="cta-section">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div>
+
+                <span>
+                    IGREJA VIDA DA CRUZ
+                </span>
+
+                <h2>
+                    Permaneça na Palavra.
+                </h2>
+
+                <p>
+                    Leia, ouça, medite e pratique
+                    a Palavra de Deus.
+                </p>
+
+            </div>
+
+
+            <div class="cta-buttons">
+
+                <a href="media.html"
+                   class="btn btn-primary">
+
+                    🎥 Ver pregações
+
+                </a>
+
+                <a href="radio.html"
+                   class="btn btn-outline">
+
+                    🎧 Ouvir Rádio
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <div>
+
+                <div class="footer-logo">
+                    ✝
+                </div>
+
+                <h3>
+                    IGREJA VIDA DA CRUZ
+                </h3>
+
+                <p>
+                    THE CROSS LIFE CHURCH
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    RECURSOS
+                </h4>
+
+                <a href="media.html">
+                    Media
+                </a>
+
+                <a href="biblia.html">
+                    Bíblia
+                </a>
+
+                <a href="radio.html">
+                    Rádio
+                </a>
+
+                <a href="ao-vivo.html">
+                    Ao Vivo
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    IGREJA
+                </h4>
+
+                <a href="sobre.html">
+                    Sobre nós
+                </a>
+
+                <a href="lideranca.html">
+                    Liderança
+                </a>
+
+                <a href="eventos.html">
+                    Eventos
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    PAÍSES
+                </h4>
+
+                <a href="paises/mocambique/index.html">
+                    🇲🇿 Moçambique
+                </a>
+
+                <a href="paises/malawi/index.html">
+                    🇲🇼 Malawi
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                ©
+                <span id="currentYear"></span>
+                Igreja Vida da Cruz.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<script>
+
+document.getElementById("currentYear").textContent =
+    new Date().getFullYear();
+
+
+document
+.getElementById("bibleSearchButton")
+.addEventListener("click", function () {
+
+
+    const book =
+        document.getElementById("bibleBook").value;
+
+    const chapter =
+        document.getElementById("bibleChapter").value;
+
+    const verse =
+        document.getElementById("bibleVerse").value;
+
+    const result =
+        document.getElementById("bibleResult");
+
+
+    if (!book || !chapter) {
+
+        result.innerHTML = `
+
+            <div class="bible-placeholder">
+
+                <div>⚠️</div>
+
+                <h3>
+                    Seleccione o livro e capítulo
+                </h3>
+
+                <p>
+                    Escolha uma passagem para continuar.
+                </p>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    let reference =
+        book + " " + chapter;
+
+
+    if (verse) {
+
+        reference += ":" + verse;
+
+    }
+
+
+    result.innerHTML = `
+
+        <div class="bible-reading-content">
+
+            <span>
+                BÍBLIA ONLINE
+            </span>
+
+            <h2>
+                ${reference}
+            </h2>
+
+            <p>
+                A leitura desta passagem será
+                disponibilizada aqui através da
+                integração bíblica oficial.
+            </p>
+
+            <a href="#"
+               class="btn btn-primary">
+
+                Abrir Bíblia
+
+            </a>
+
+        </div>
+
+    `;
+
+});
+
+</script>
+
+
+</body>
+
+</html>

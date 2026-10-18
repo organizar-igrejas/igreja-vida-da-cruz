@@ -1,0 +1,115 @@
+[
+  {
+    "id": "mw-southern",
+    "countryId": "malawi",
+    "name": "Southern Region",
+    "code": "SR",
+    "language": "English",
+    "active": true
+  },
+  {
+    "id": "mw-central",
+    "countryId": "malawi",
+    "name": "Central Region",
+    "code": "CR",
+    "language": "English",
+    "active": true
+  },
+  {
+    "id": "mw-northern",
+    "countryId": "malawi",
+    "name": "Northern Region",
+    "code": "NR",
+    "language": "English",
+    "active": true
+  },
+
+  {
+    "id": "mz-tete",
+    "countryId": "mozambique",
+    "name": "Tete",
+    "code": "TET",
+    "language": "Português",
+    "active": true
+  },
+  {
+    "id": "mz-manica",
+    "countryId": "mozambique",
+    "name": "Manica",
+    "code": "MAN",
+    "language": "Português",
+    "active": true
+  },
+  {
+    "id": "mz-sofala",
+    "countryId": "mozambique",
+    "name": "Sofala",
+    "code": "SOF",
+    "language": "Português",
+    "active": true
+  },
+  {
+    "id": "mz-zambezia",
+    "countryId": "mozambique",
+    "name": "Zambézia",
+    "code": "ZAM",
+    "language": "Português",
+    "active": true
+  },
+  {
+    "id": "mz-nampula",
+    "countryId": "mozambique",
+    "name": "Nampula",
+    "code": "NAM",
+    "language": "Português",
+    "active": true
+  },
+  {
+    "id": "mz-niassa",
+    "countryId": "mozambique",
+    "name": "Niassa",
+    "code": "NIA",
+    "language": "Português",
+    "active": true
+  },
+  {
+    "id": "mz-cabo-delgado",
+    "countryId": "mozambique",
+    "name": "Cabo Delgado",
+    "code": "CDL",
+    "language": "Português",
+    "active": true
+  },
+  {
+    "id": "mz-inhambane",
+    "countryId": "mozambique",
+    "name": "Inhambane",
+    "code": "INH",
+    "language": "Português",
+    "active": true
+  },
+  {
+    "id": "mz-gaza",
+    "countryId": "mozambique",
+    "name": "Gaza",
+    "code": "GAZ",
+    "language": "Português",
+    "active": true
+  },
+  {
+    "id": "mz-maputo",
+    "countryId": "mozambique",
+    "name": "Maputo",
+    "code": "MPM",
+    "language": "Português",
+    "active": true
+  },
+  {
+    "id": "mz-maputo-city",
+    "countryId": "mozambique",
+    "name": "Cidade de Maputo",
+    "code": "CMM",
+    "language": "Português",
+    "active": true
+  }
+]

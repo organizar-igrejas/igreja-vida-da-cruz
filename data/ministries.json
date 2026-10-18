@@ -1,0 +1,90 @@
+[
+  {
+    "id": "ministry-general",
+    "name": "Church Administration",
+    "namePt": "Direcção da Igreja",
+    "nameEn": "Church Administration",
+    "icon": "🏛️",
+    "active": true
+  },
+  {
+    "id": "ministry-sunday-school",
+    "name": "Sunday School",
+    "namePt": "Escola Dominical",
+    "nameEn": "Sunday School",
+    "icon": "📖",
+    "active": true
+  },
+  {
+    "id": "ministry-youth",
+    "name": "Youth Ministry",
+    "namePt": "Departamento de Jovens",
+    "nameEn": "Youth Ministry",
+    "icon": "🔥",
+    "active": true
+  },
+  {
+    "id": "ministry-mothers",
+    "name": "Mothers Ministry",
+    "namePt": "Departamento de Mães",
+    "nameEn": "Mothers Ministry",
+    "icon": "❤️",
+    "active": true
+  },
+  {
+    "id": "ministry-fathers",
+    "name": "Fathers Ministry",
+    "namePt": "Departamento de Pais",
+    "nameEn": "Fathers Ministry",
+    "icon": "👔",
+    "active": true
+  },
+  {
+    "id": "ministry-worship",
+    "name": "Worship Ministry",
+    "namePt": "Ministério de Louvor e Adoração",
+    "nameEn": "Worship Ministry",
+    "icon": "🎵",
+    "active": true
+  },
+  {
+    "id": "ministry-media",
+    "name": "Media Ministry",
+    "namePt": "Ministério de Comunicação e Media",
+    "nameEn": "Media Ministry",
+    "icon": "📺",
+    "active": true
+  },
+  {
+    "id": "ministry-evangelism",
+    "name": "Evangelism Ministry",
+    "namePt": "Ministério de Evangelismo",
+    "nameEn": "Evangelism Ministry",
+    "icon": "🌍",
+    "active": true
+  },
+  {
+    "id": "ministry-prayer",
+    "name": "Prayer Ministry",
+    "namePt": "Ministério de Oração",
+    "nameEn": "Prayer Ministry",
+    "icon": "🙏",
+    "active": true
+  },
+  {
+    "id": "ministry-children",
+    "name": "Children's Ministry",
+    "namePt": "Ministério Infantil",
+    "nameEn": "Children's Ministry",
+    "icon": "👧",
+    "active": true
+  },
+  {
+    "id": "ministry-choir",
+    "name": "Choir Ministry",
+    "namePt": "Ministério Coral",
+    "nameEn": "Choir Ministry",
+    "icon": "🎤",
+    "active": true
+  }
+]

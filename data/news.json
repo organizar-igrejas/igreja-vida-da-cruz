@@ -1,0 +1,41 @@
+[
+  {
+    "id": "news-001",
+    "countryId": "malawi",
+    "provinceId": "mw-southern",
+    "districtId": "mw-blantyre",
+    "zoneId": "mw-chiromoni-zone",
+    "churchId": "mw-chiromoni-hq",
+    "title": "Welcome to The Cross Life Church Malawi",
+    "subtitle": "Connecting churches, leaders and believers across Malawi.",
+    "content": "Official news and announcements from The Cross Life Church in Malawi.",
+    "category": "Church News",
+    "author": "",
+    "image": "assets/media/news-malawi.jpg",
+    "language": "English",
+    "featured": true,
+    "published": true,
+    "publishedAt": "",
+    "createdAt": ""
+  },
+
+  {
+    "id": "news-002",
+    "countryId": "mozambique",
+    "provinceId": "mz-tete",
+    "districtId": "mz-tete-city",
+    "zoneId": "mz-nhamatanda-zone",
+    "churchId": "mz-nhamatanda-matundo-hq",
+    "title": "Bem-vindos à Igreja Vida da Cruz Moçambique",
+    "subtitle": "Uma família de fé, esperança e serviço.",
+    "content": "Notícias, comunicados e informações oficiais da Igreja Vida da Cruz em Moçambique.",
+    "category": "Notícias da Igreja",
+    "author": "",
+    "image": "assets/media/news-mozambique.jpg",
+    "language": "Português",
+    "featured": true,
+    "published": true,
+    "publishedAt": "",
+    "createdAt": ""
+  }
+]

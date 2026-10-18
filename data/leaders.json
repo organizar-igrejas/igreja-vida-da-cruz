@@ -1,0 +1,33 @@
+[
+  {
+    "id": "bishop-001",
+    "name": "Bishop 1",
+    "title": "Bishop",
+    "countryId": "",
+    "churchId": "",
+    "ministry": "General Leadership",
+    "phone": "",
+    "whatsapp": "",
+    "email": "",
+    "facebook": "",
+    "image": "assets/bishops/bishop-1.jpg",
+    "bio": "",
+    "active": true
+  },
+
+  {
+    "id": "bishop-002",
+    "name": "Bishop 2",
+    "title": "Bishop",
+    "countryId": "",
+    "churchId": "",
+    "ministry": "General Leadership",
+    "phone": "",
+    "whatsapp": "",
+    "email": "",
+    "facebook": "",
+    "image": "assets/bishops/bishop-2.jpg",
+    "bio": "",
+    "active": true
+  }
+]
